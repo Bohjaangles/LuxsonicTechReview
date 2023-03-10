@@ -1,1 +1,5 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: compileSnippet
+  insize=1415 file=Assets/DefaultResourcesExtra/Autodesk Interactive pass=FORWARD cachingPP=1 ppOnly=0 stripLineD=0 bui
