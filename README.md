@@ -14,6 +14,14 @@ Citations and external assets sources:
  - hospital supplies table = https://sketchfab.com/3d-models/adjustable-bedside-table-e3ef6fd54af440efa31984214dd6f11d
   - Credit = https://sketchfab.com/EDIIIC
   - License = CC Attribution
+ 
+ - Patient = https://sketchfab.com/3d-models/patient-00b483f284a542899b94e99831f1ad1c
+  - Credit = "Patient" (https://skfb.ly/6RyGX) by edouard77 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  - license = CC Attribution
+
+ - Hospital bed = https://www.cgtrader.com/items/3201962/download-page
+  - Credit =  INPUT CREDIT <=======<===========<============
+  - License = Royalty Free License
 
 
 
