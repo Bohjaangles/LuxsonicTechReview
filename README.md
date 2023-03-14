@@ -23,6 +23,10 @@ Citations and external assets sources:
   - Credit =  "Hospital Bed" (https://skfb.ly/ooJJK) by CobbleGames is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
   - License = CC Attribution
 
+  - Floor Mat = https://sketchfab.com/3d-models/cc0-doormate-a30cdc77fc894caba2aa578698b248b8
+    - Credit = "CC0 - Doormate" (https://skfb.ly/oxEB8) by plaggy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+    - CC Attribution
+
 
 
   possible resources to use:

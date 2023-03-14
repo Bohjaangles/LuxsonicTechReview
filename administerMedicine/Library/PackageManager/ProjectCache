@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638142763002511980
-    m_Hash: 1968887373
+      ticks: 638144235261626961
+    m_Hash: 1532482290
   m_LockFileStatus:
     m_FilePath: C:/Users/Bohjaangles PC/personal/unity/LuxsonicTechReview/administerMedicine/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638142763002567419
-    m_Hash: 3192074270
+      ticks: 638144235261694037
+    m_Hash: 667944818
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -187,7 +187,7 @@ m_ResolvedPackages:
   - name: com.unity.xr.oculus
     version: 3.2.2
   - name: com.unity.xr.management
-    version: 4.2.0
+    version: 4.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -970,8 +970,10 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.7.2
     - 1.7.3
+    - 1.7.4
     - 1.8.0
     - 1.8.1
+    - 1.8.2
     compatible:
     - 1.6.4
     - 1.7.0-pre.1
@@ -980,8 +982,10 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.7.2
     - 1.7.3
+    - 1.7.4
     - 1.8.0
     - 1.8.1
+    - 1.8.2
     verified: 1.6.4
   dependencies:
   - name: com.unity.modules.director
@@ -1304,6 +1308,247 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 2.2.0
+    nextVersion: 
+- packageId: com.unity.xr.management@4.2.1
+  testable: 0
+  isDirectDependency: 1
+  version: 4.2.1
+  source: 1
+  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.xr.management@4.2.1
+  assetPath: Packages/com.unity.xr.management
+  name: com.unity.xr.management
+  displayName: XR Plugin Management
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Package that provides simple management of XR plug-ins. Manages and
+    offers help with loading, initialization, settings, and build support for XR
+    plug-ins.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.8
+    - 0.1.0-preview.12
+    - 1.0.0-preview.2
+    - 2.0.0-preview.3
+    - 2.0.0-preview.6
+    - 2.0.0-preview.9
+    - 2.0.0-preview.10
+    - 2.0.0-preview.13
+    - 2.0.0-preview.21
+    - 2.0.0-preview.22
+    - 2.0.0-preview.24
+    - 2.0.0-preview.25
+    - 2.0.0-preview.26
+    - 3.0.1
+    - 3.0.2-preview.1
+    - 3.0.2-preview.2
+    - 3.0.3
+    - 3.0.4-preview.1
+    - 3.0.4-preview.3
+    - 3.0.4
+    - 3.0.5-preview.1
+    - 3.0.5
+    - 3.0.6-preview.2
+    - 3.0.6
+    - 3.1.0-preview.2
+    - 3.2.4
+    - 3.2.6
+    - 3.2.7
+    - 3.2.9
+    - 3.2.10
+    - 3.2.11-preview.1
+    - 3.2.12
+    - 3.2.13
+    - 3.2.15
+    - 3.2.16
+    - 3.2.17
+    - 4.0.0-exp.2
+    - 4.0.0-pre.2
+    - 4.0.0-pre.3
+    - 4.0.1
+    - 4.0.3
+    - 4.0.5
+    - 4.0.6
+    - 4.0.7
+    - 4.1.0-pre.1
+    - 4.1.0-pre.2
+    - 4.1.0
+    - 4.2.0
+    - 4.2.1
+    - 4.3.1
+    - 4.3.3
+    compatible:
+    - 4.2.0
+    - 4.2.1
+    - 4.3.1
+    - 4.3.3
+    verified: 4.2.1
+  dependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.7
+  - name: com.unity.subsystemregistration
+    version: 1.0.6
+  resolvedDependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
+  keywords:
+  - xr
+  - sdk
+  - ar
+  - vr
+  - management
+  - build
+  - plugin
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637769778170000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.management.git
+    revision: 9c99228887ff65cc0729434b3b9371d22b707cb9
+    path: 
+  unityLifecycle:
+    version: 4.2.0
+    nextVersion: 
+- packageId: com.unity.xr.openxr@1.6.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.6.0
+  source: 1
+  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.xr.openxr@1.6.0
+  assetPath: Packages/com.unity.xr.openxr
+  name: com.unity.xr.openxr
+  displayName: OpenXR Plugin
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: OpenXR is an open, royalty-free standard developed by Khronos that
+    aims to simplify AR/VR development by allowing developers to target a wide range
+    of AR/VR devices. Use this plug-in to enable OpenXR in XR Plug-in Management.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.1-preview.1
+    - 0.1.2-preview.2
+    - 1.0.0-pre.1
+    - 1.0.2
+    - 1.0.3
+    - 1.1.1
+    - 1.2.0
+    - 1.2.2
+    - 1.2.3
+    - 1.2.8
+    - 1.3.0
+    - 1.3.1
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.5.0-exp.1
+    - 1.5.0
+    - 1.5.1
+    - 1.5.3
+    - 1.6.0
+    - 1.7.0
+    compatible:
+    - 1.6.0
+    - 1.7.0
+    verified: 1.6.0
+  dependencies:
+  - name: com.unity.xr.management
+    version: 4.0.1
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.2
+  - name: com.unity.inputsystem
+    version: 1.4.4
+  resolvedDependencies:
+  - name: com.unity.xr.management
+    version: 4.2.1
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
+  - name: com.unity.inputsystem
+    version: 1.5.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.uielementsnative
+    version: 1.0.0
+  keywords:
+  - openxr
+  - xr
+  - reality
+  - xreditorsubsystem
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638055006880000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.6/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
+    revision: e0ea9b26e3d27a43f8e54b4d93d561b0aa739d58
+    path: 
+  unityLifecycle:
+    version: 1.6.0
     nextVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
@@ -3078,6 +3323,102 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
+- packageId: com.unity.xr.legacyinputhelpers@2.1.10
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.10
+  source: 1
+  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.10
+  assetPath: Packages/com.unity.xr.legacyinputhelpers
+  name: com.unity.xr.legacyinputhelpers
+  displayName: XR Legacy Input Helpers
+  author:
+    name: 
+    email: 
+    url: 
+  category: XR
+  type: asset
+  description: This package includes the tracked pose driver for the legacy input
+    system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+    Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects to
+    track input devices, the XR Bindings Seeding Tool adds a menu item under the
+    'Assets' menu which populates the Input Asset with Unity's crossplatform Input
+    Bindings
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    - 1.0.2
+    - 1.0.3
+    - 1.3.1
+    - 1.3.2
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 1.3.7
+    - 1.3.8
+    - 1.3.11
+    - 2.0.1
+    - 2.0.2
+    - 2.0.4
+    - 2.0.6
+    - 2.0.8
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.6
+    - 2.1.7
+    - 2.1.8
+    - 2.1.9
+    - 2.1.10
+    compatible:
+    - 2.1.10
+    verified: 2.1.10
+  dependencies:
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  keywords:
+  - TPD
+  - Tracked Pose Driver
+  - XR
+  - Input
+  - Helpers
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637958908030000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
+    revision: 465ee12451634ea2b2986d54f6ae8be37316772a
+    path: 
+  unityLifecycle:
+    version: 2.1.10
+    nextVersion: 
 - packageId: com.unity.inputsystem@1.5.0
   testable: 0
   isDirectDependency: 0
@@ -3183,6 +3524,72 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.5.0
     nextVersion: 
+- packageId: com.unity.subsystemregistration@1.1.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.1.0
+  source: 1
+  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.subsystemregistration@1.1.0
+  assetPath: Packages/com.unity.subsystemregistration
+  name: com.unity.subsystemregistration
+  displayName: Subsystem Registration
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Provides internal registration mechanism for standalone subsystems. 
+    It allows a standalone subsystem to inform the Subsystem Manager of its existence.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.4
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    compatible:
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    verified: 1.1.2
+  dependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - subsystem
+  - registration
+  - internal
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637314426150000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
+    revision: 72584ba5248fbe79e560e795ad819f876954fceb
+    path: 
+  unityLifecycle:
+    version: 1.1.0
+    nextVersion: 
 - packageId: com.unity.xr.core-utils@2.0.1
   testable: 0
   isDirectDependency: 0
@@ -3197,7 +3604,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: "Common utility classes for XR projects\nRefer to API documentation
     for details. Some particularly useful utilities include:\n\u25AA Geometry Utilities\n 
     \u25AA Point of closest approach\n  \u25AA Closest edge of a polygon\n  \u25AA
@@ -3210,9 +3617,25 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 2.0.0-pre.3
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0
     - 2.0.1
+    - 2.1.0-pre.1
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0-pre.1
+    - 2.2.0-pre.2
+    - 2.2.0
     compatible:
     - 2.0.1
+    - 2.1.0-pre.1
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0-pre.1
+    - 2.2.0-pre.2
+    - 2.2.0
     verified: 2.0.1
   dependencies:
   - name: com.unity.modules.xr
@@ -3242,9 +3665,9 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638064377720000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.0/manual/index.html
   hasRepository: 1
   repository:
@@ -3254,102 +3677,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 2.0.1
-    nextVersion: 
-- packageId: com.unity.xr.legacyinputhelpers@2.1.10
-  testable: 0
-  isDirectDependency: 0
-  version: 2.1.10
-  source: 1
-  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.10
-  assetPath: Packages/com.unity.xr.legacyinputhelpers
-  name: com.unity.xr.legacyinputhelpers
-  displayName: XR Legacy Input Helpers
-  author:
-    name: 
-    email: 
-    url: 
-  category: XR
-  type: asset
-  description: This package includes the tracked pose driver for the legacy input
-    system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
-    Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects to
-    track input devices, the XR Bindings Seeding Tool adds a menu item under the
-    'Assets' menu which populates the Input Asset with Unity's crossplatform Input
-    Bindings
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    - 1.0.2
-    - 1.0.3
-    - 1.3.1
-    - 1.3.2
-    - 1.3.4
-    - 1.3.5
-    - 1.3.6
-    - 1.3.7
-    - 1.3.8
-    - 1.3.11
-    - 2.0.1
-    - 2.0.2
-    - 2.0.4
-    - 2.0.6
-    - 2.0.8
-    - 2.1.1
-    - 2.1.2
-    - 2.1.3
-    - 2.1.4
-    - 2.1.6
-    - 2.1.7
-    - 2.1.8
-    - 2.1.9
-    - 2.1.10
-    compatible:
-    - 2.1.10
-    verified: 2.1.10
-  dependencies:
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  keywords:
-  - TPD
-  - Tracked Pose Driver
-  - XR
-  - Input
-  - Helpers
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637958908030000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
-    revision: 465ee12451634ea2b2986d54f6ae8be37316772a
-    path: 
-  unityLifecycle:
-    version: 2.1.10
     nextVersion: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
@@ -4099,7 +4426,7 @@ m_ResolvedPackages:
     version: 4.2.0
   resolvedDependencies:
   - name: com.unity.xr.management
-    version: 4.2.0
+    version: 4.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -4142,113 +4469,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 3.2.2
-    nextVersion: 
-- packageId: com.unity.xr.openxr@1.6.0
-  testable: 0
-  isDirectDependency: 0
-  version: 1.6.0
-  source: 1
-  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.xr.openxr@1.6.0
-  assetPath: Packages/com.unity.xr.openxr
-  name: com.unity.xr.openxr
-  displayName: OpenXR Plugin
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: OpenXR is an open, royalty-free standard developed by Khronos that
-    aims to simplify AR/VR development by allowing developers to target a wide range
-    of AR/VR devices. Use this plug-in to enable OpenXR in XR Plug-in Management.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.1.1-preview.1
-    - 0.1.2-preview.2
-    - 1.0.0-pre.1
-    - 1.0.2
-    - 1.0.3
-    - 1.1.1
-    - 1.2.0
-    - 1.2.2
-    - 1.2.3
-    - 1.2.8
-    - 1.3.0
-    - 1.3.1
-    - 1.4.0
-    - 1.4.1
-    - 1.4.2
-    - 1.5.0-exp.1
-    - 1.5.0
-    - 1.5.1
-    - 1.5.3
-    - 1.6.0
-    - 1.7.0
-    compatible:
-    - 1.6.0
-    - 1.7.0
-    verified: 1.6.0
-  dependencies:
-  - name: com.unity.xr.management
-    version: 4.0.1
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.2
-  - name: com.unity.inputsystem
-    version: 1.4.4
-  resolvedDependencies:
-  - name: com.unity.xr.management
-    version: 4.2.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.10
-  - name: com.unity.subsystemregistration
-    version: 1.1.0
-  - name: com.unity.inputsystem
-    version: 1.5.0
-  - name: com.unity.modules.uielements
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.uielementsnative
-    version: 1.0.0
-  keywords:
-  - openxr
-  - xr
-  - reality
-  - xreditorsubsystem
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 638055006880000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.6/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.openxr.git
-    revision: e0ea9b26e3d27a43f8e54b4d93d561b0aa739d58
-    path: 
-  unityLifecycle:
-    version: 1.6.0
     nextVersion: 
 - packageId: com.unity.searcher@4.9.1
   testable: 0
@@ -4316,204 +4536,4 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 4.9.1
-    nextVersion: 
-- packageId: com.unity.xr.management@4.2.0
-  testable: 0
-  isDirectDependency: 0
-  version: 4.2.0
-  source: 1
-  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.xr.management@4.2.0
-  assetPath: Packages/com.unity.xr.management
-  name: com.unity.xr.management
-  displayName: XR Plugin Management
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: Package that provides simple management of XR plug-ins. Manages and
-    offers help with loading, initialization, settings, and build support for XR
-    plug-ins.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.8
-    - 0.1.0-preview.12
-    - 1.0.0-preview.2
-    - 2.0.0-preview.3
-    - 2.0.0-preview.6
-    - 2.0.0-preview.9
-    - 2.0.0-preview.10
-    - 2.0.0-preview.13
-    - 2.0.0-preview.21
-    - 2.0.0-preview.22
-    - 2.0.0-preview.24
-    - 2.0.0-preview.25
-    - 2.0.0-preview.26
-    - 3.0.1
-    - 3.0.2-preview.1
-    - 3.0.2-preview.2
-    - 3.0.3
-    - 3.0.4-preview.1
-    - 3.0.4-preview.3
-    - 3.0.4
-    - 3.0.5-preview.1
-    - 3.0.5
-    - 3.0.6-preview.2
-    - 3.0.6
-    - 3.1.0-preview.2
-    - 3.2.4
-    - 3.2.6
-    - 3.2.7
-    - 3.2.9
-    - 3.2.10
-    - 3.2.11-preview.1
-    - 3.2.12
-    - 3.2.13
-    - 3.2.15
-    - 3.2.16
-    - 3.2.17
-    - 4.0.0-exp.2
-    - 4.0.0-pre.2
-    - 4.0.0-pre.3
-    - 4.0.1
-    - 4.0.3
-    - 4.0.5
-    - 4.0.6
-    - 4.0.7
-    - 4.1.0-pre.1
-    - 4.1.0-pre.2
-    - 4.1.0
-    - 4.2.0
-    - 4.2.1
-    - 4.3.1
-    - 4.3.3
-    compatible:
-    - 4.2.0
-    - 4.2.1
-    - 4.3.1
-    - 4.3.3
-    verified: 4.2.1
-  dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.7
-  - name: com.unity.subsystemregistration
-    version: 1.0.6
-  resolvedDependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.10
-  - name: com.unity.subsystemregistration
-    version: 1.1.0
-  keywords:
-  - xr
-  - sdk
-  - ar
-  - vr
-  - management
-  - build
-  - plugin
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637704350680000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.management.git
-    revision: c8fb6583d6d04516909a8d2ab999a1dbe90ade50
-    path: 
-  unityLifecycle:
-    version: 4.2.0
-    nextVersion: 
-- packageId: com.unity.subsystemregistration@1.1.0
-  testable: 0
-  isDirectDependency: 0
-  version: 1.1.0
-  source: 1
-  resolvedPath: C:\Users\Bohjaangles PC\personal\unity\LuxsonicTechReview\administerMedicine\Library\PackageCache\com.unity.subsystemregistration@1.1.0
-  assetPath: Packages/com.unity.subsystemregistration
-  name: com.unity.subsystemregistration
-  displayName: Subsystem Registration
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: Provides internal registration mechanism for standalone subsystems. 
-    It allows a standalone subsystem to inform the Subsystem Manager of its existence.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.4
-    - 1.0.4
-    - 1.0.5
-    - 1.0.6
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    compatible:
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    verified: 1.1.2
-  dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords:
-  - subsystem
-  - registration
-  - internal
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637314426150000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
-    revision: 72584ba5248fbe79e560e795ad819f876954fceb
-    path: 
-  unityLifecycle:
-    version: 1.1.0
     nextVersion: 
