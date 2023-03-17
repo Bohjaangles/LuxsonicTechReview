@@ -6,7 +6,7 @@ public class GlovesOnHandsLeft : MonoBehaviour
 {
     public Transform hand; // maybe MeshTransform
     public Transform glove;
-
+ 
 
 
     // Start is called before the first frame update
