@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - floor
+  - handRight
+  - handLeft
+  - Glove
   layers:
   - Default
   - TransparentFX
