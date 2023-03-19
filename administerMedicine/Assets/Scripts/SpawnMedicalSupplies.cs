@@ -28,31 +28,42 @@ public class SpawnMedicalSupplies : MonoBehaviour
         Reset();
     }
 
+    private void OnEnable()
+    {
+        ResetFromFailure.SimResetMeds += Reset;
+    }
+
+    private void OnDisable()
+    {
+        ResetFromFailure.SimResetMeds -= Reset;
+    }
+
     // to be called when simulation failure condition is met
-    private void Reset() {
+    void Reset() {
+
         // assign a random value to each med supplies item for random order spawning
         needleValue = Random.Range(0.0f, 10.0f);
         vaccineValue = Random.Range(0.0f, 10.0f);
         glovesValue = Random.Range(0.0f, 10.0f);
 
         // Ensure that all medical supplies game objects and children are set to active - 
+        gloves.SetActive(true);
         foreach (Transform child in gloves.transform)
         {
             child.gameObject.SetActive(true);
         }
-        gloves.SetActive(true);
 
+        needle.SetActive(true);
         foreach (Transform child in needle.transform)
         {
             child.gameObject.SetActive(true);
         }
-        needle.SetActive(true);
 
+        vaccine.SetActive(true);
         foreach (Transform child in vaccine.transform)
         {
             child.gameObject.SetActive(true);
         }
-        vaccine.SetActive(true);
 
         // determine which med supplies item spawns at position 1. 
         if (needleValue < vaccineValue && needleValue < glovesValue)

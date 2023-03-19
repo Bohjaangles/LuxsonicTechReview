@@ -248,6 +248,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6224944}
   m_CullTransparentMesh: 1
+--- !u!1 &37335295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37335296}
+  - component: {fileID: 37335297}
+  m_Layer: 0
+  m_Name: SimCheckForFailure
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37335296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37335295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 789791664}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &37335297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37335295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c706e196cbe8c4ba9fdb31aac60c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPatientSocketInitiated: {fileID: 1892741525}
+  isVaccineSocketInitiated: {fileID: 1670673230}
+  isGlovesApplied: {fileID: 939378859}
+  glovesApplied: 0
+  needleInsertedInVaccine: 0
+  NeedleRemovedFromVaccine: 0
+  NeedleInsertedInPatient: 0
 --- !u!1 &75643147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2517,6 +2568,7 @@ Transform:
   m_Children:
   - {fileID: 1634880609}
   - {fileID: 713751781}
+  - {fileID: 37335296}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2763,6 +2815,7 @@ MonoBehaviour:
   leftHand: {fileID: 2004234269}
   rightHand: {fileID: 1572144967}
   handMaterial: {fileID: 2100000, guid: b7c34f8ae65964c438d47a524fa3fb12, type: 2}
+  IsGlovesApplied: 0
 --- !u!1 &945222456
 GameObject:
   m_ObjectHideFlags: 0
@@ -5246,6 +5299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RightHandTouchGlove: 0
+--- !u!1 &1591964028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7154395264127095104, guid: 2c952b821fa37e847970dcdfa5efdc28, type: 3}
+  m_PrefabInstance: {fileID: 361247939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1634880608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5285,11 +5343,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634880608}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe4be90149534bd47bcd2482115f8cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patient: {fileID: 1591964028}
   gloves: {fileID: 981382072}
   needle: {fileID: 590221078}
   vaccine: {fileID: 1389857232}
@@ -5492,6 +5551,7 @@ GameObject:
   - component: {fileID: 1670673226}
   - component: {fileID: 1670673228}
   - component: {fileID: 1670673229}
+  - component: {fileID: 1670673230}
   m_Layer: 0
   m_Name: Socket
   m_TagString: Untagged
@@ -5534,7 +5594,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 2
   m_AttachTransform: {fileID: 1567374455}
-  m_KeepSelectedTargetValid: 1
+  m_KeepSelectedTargetValid: 0
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
@@ -5583,6 +5643,21 @@ CapsuleCollider:
   m_Height: 0.018087829
   m_Direction: 2
   m_Center: {x: 0.0006482355, y: 0.00049135723, z: 0.004799221}
+--- !u!114 &1670673230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670673225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee6c07c46f58da4f8cadfadf9fbcecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Socket: {fileID: 1670673228}
+  needleInVaccine: 0
+  needleRemovedFromVaccine: 0
 --- !u!1 &1703204380
 GameObject:
   m_ObjectHideFlags: 0
@@ -6256,6 +6331,7 @@ GameObject:
   - component: {fileID: 1892741522}
   - component: {fileID: 1892741523}
   - component: {fileID: 1892741524}
+  - component: {fileID: 1892741525}
   m_Layer: 0
   m_Name: DeltoidHitBox
   m_TagString: Untagged
@@ -6312,7 +6388,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 2
   m_AttachTransform: {fileID: 552762624}
-  m_KeepSelectedTargetValid: 1
+  m_KeepSelectedTargetValid: 0
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
@@ -6347,6 +6423,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &1892741525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892741521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c93057b0d0d2c54a8db437a9f454bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Socket: {fileID: 1892741524}
+  DoesPatientGetNeedle: 0
 --- !u!1 &1910236136
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,6 +6757,7 @@ GameObject:
   - component: {fileID: 2096045740}
   - component: {fileID: 2096045739}
   - component: {fileID: 2096045738}
+  - component: {fileID: 2096045741}
   m_Layer: 0
   m_Name: ResetButton1
   m_TagString: Untagged
@@ -6739,7 +6830,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1370287717}
+      - m_Target: {fileID: 1807932309}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6751,29 +6842,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2096045741}
+        m_TargetAssemblyTypeName: ResetFromFailure, Assembly-CSharp
+        m_MethodName: ResetFromSimFailure
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 713751780}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2096045739
 MonoBehaviour:
@@ -6813,6 +6892,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096045736}
   m_CullTransparentMesh: 1
+--- !u!114 &2096045741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096045736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad1bccb3a7ee3a42b7ab852d5345aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPressed: 0
 --- !u!1001 &2117023272
 PrefabInstance:
   m_ObjectHideFlags: 0
