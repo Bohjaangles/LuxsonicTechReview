@@ -55,7 +55,7 @@ public class SimFailCheck : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
         if (_failCheckCalledRecently)
@@ -72,16 +72,15 @@ public class SimFailCheck : MonoBehaviour
             // first check, to ensure gloves have been applied before anything else
             if (!isGlovesApplied.IsGlovesApplied && isVaccineSocketInitiated.needleInVaccine)
             {
-                if (FailCheck != null)
-                {
-                    FailCheck();
+                _failCheckCalledRecently = true;
+                CallFailCheck();
+                 
                     glovesApplied = false;
                     needleInsertedInVaccine = false;
                     NeedleRemovedFromVaccine = false;
                     NeedleInsertedInPatient = false;
-                    _failCheckCalledRecently = true;
                     _resetTimer = 3.0f;
-                }
+                
             } else
             {
                 glovesApplied = true;
@@ -90,39 +89,20 @@ public class SimFailCheck : MonoBehaviour
             // second check to ensure needle has been inserted in vaccine before It is removed and stuck into the patient.
             if (!isVaccineSocketInitiated.needleInVaccine && isPatientSocketInitiated.DoesPatientGetNeedle)
             {
-                if (FailCheck != null)
-                {
+                _failCheckCalledRecently = true;
+                CallFailCheck();
+                
                     FailCheck();
                     glovesApplied = false;
                     needleInsertedInVaccine = false;
                     NeedleRemovedFromVaccine = false;
                     NeedleInsertedInPatient = false;
-                    _failCheckCalledRecently = true;
                     _resetTimer = 3.0f;
-                }
+                
             } else
             {
                 needleInsertedInVaccine = true;
             }
-            /*
-            // third check to ensure needle is removed from vaccine prior to sticking the needle in patients deltoid
-            if (!isVaccineSocketInitiated.needleRemovedFromVaccine && isPatientSocketInitiated.DoesPatientGetNeedle)
-            {
-                if (FailCheck != null)
-                {
-                    FailCheck();
-                    glovesApplied = false;
-                    needleInsertedInVaccine = false;
-                    NeedleRemovedFromVaccine = false;
-                    NeedleInsertedInPatient = false;
-                    _failCheckCalledRecently = true;
-                    _resetTimer = 10.0f;
-                }
-            } else
-            {
-                NeedleRemovedFromVaccine = true;
-            }
-            */
 
             // final check that everything required of simulation has been completed for success path
             if (glovesApplied && needleInsertedInVaccine && isPatientSocketInitiated.DoesPatientGetNeedle)
@@ -133,6 +113,14 @@ public class SimFailCheck : MonoBehaviour
                     SuccessCheck();
                 }
             }
+        }
+    }
+
+    private void CallFailCheck()
+    {
+        if (FailCheck != null)
+        {
+            FailCheck();
         }
     }
 }
