@@ -38,7 +38,7 @@ public class SimulationSuccess : MonoBehaviour
 
     void SimComplete()
     {
-        SucessText.GetComponent<TMPro.TextMeshProUGUI>().text = $"You completed this simulation in {_NumAttempts} attempt(s)";
+        SucessText.GetComponent<TMPro.TextMeshProUGUI>().text = $"You successfully completed this simulation in {_NumAttempts} attempt(s)";
         WelcomeDisplay1.SetActive(false);
         WelcomeDisplay2.SetActive(false);
         WelcomeDisplay3.SetActive(false);
