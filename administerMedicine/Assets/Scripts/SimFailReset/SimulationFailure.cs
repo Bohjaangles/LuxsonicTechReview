@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class SimulationFailure : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class SimulationFailure : MonoBehaviour
     public GameObject needle;
     public GameObject vaccine;
     public GameObject failureUI;
+   
 
     // Start is called before the first frame update
 
@@ -36,6 +38,7 @@ public class SimulationFailure : MonoBehaviour
 
     void SimFailure()
     {
+        /*
         foreach (Transform child in gloves.transform)
         {
             child.gameObject.SetActive(false);
@@ -55,7 +58,7 @@ public class SimulationFailure : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
-
+        */
         failureUI.SetActive(true);
     }
 }

@@ -25,14 +25,14 @@ public class IsPatientSocketInitiated : MonoBehaviour
 
     private void OnEnable()
     {
-        ResetFromFailure.SimResetMeds += resetBools;
+        ResetFromFailure.SimResetMeds += ResetBool;
     }
 
     private void OnDisable()
     {
-        ResetFromFailure.SimResetMeds -= resetBools;
+        ResetFromFailure.SimResetMeds -= ResetBool;
     }
-    void resetBools()
+    void ResetBool()
     {
         DoesPatientGetNeedle = false;
     }
