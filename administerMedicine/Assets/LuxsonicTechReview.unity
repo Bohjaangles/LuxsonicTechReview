@@ -343,6 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 100212004}
   - component: {fileID: 100212005}
+  - component: {fileID: 100212006}
   m_Layer: 0
   m_Name: SimSuccess
   m_TagString: Untagged
@@ -382,6 +383,19 @@ MonoBehaviour:
   WelcomeDisplay2: {fileID: 170839401}
   WelcomeDisplay3: {fileID: 871158953}
   FaillureDisplay: {fileID: 1807932309}
+  SucessText: {fileID: 1591883822}
+--- !u!114 &100212006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100212003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67300c03e62f8da4bbcff2980daf31e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &129264187 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8811170915698977711, guid: e794e2a1fd468e244974f315bd445bec, type: 3}
@@ -2990,6 +3004,7 @@ Transform:
   - {fileID: 713751781}
   - {fileID: 37335296}
   - {fileID: 100212004}
+  - {fileID: 2093596748}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4880,21 +4895,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 743062418}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1429459095}
-        m_TargetAssemblyTypeName: ResetFromFailure, Assembly-CSharp
-        m_MethodName: ResetFromSimFailure
+      - m_Target: {fileID: 100212006}
+        m_TargetAssemblyTypeName: RestartOnSuccess, Assembly-CSharp
+        m_MethodName: ResetSimulationFromStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7470,6 +7473,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeftHandTouchGlove: 0
+--- !u!1 &2093596747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2093596748}
+  - component: {fileID: 2093596749}
+  m_Layer: 0
+  m_Name: HandstoWhiteOnReset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2093596748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093596747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 789791664}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093596749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093596747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c40dd6b2fd303543885986e6f081529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handMaterial: {fileID: 2100000, guid: b7c34f8ae65964c438d47a524fa3fb12, type: 2}
 --- !u!1 &2096045736
 GameObject:
   m_ObjectHideFlags: 0

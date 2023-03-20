@@ -5,24 +5,37 @@ using UnityEngine.UI;
 
 public class SimulationSuccess : MonoBehaviour
 {
-    // check that all steps have been completed in order
-    private SimFailCheck isAllStepsCompleted;
-
     // all the UI displays. Success for editing it and the other to ensure they are off
     public GameObject SuccessBanner;
     public GameObject WelcomeDisplay1;
     public GameObject WelcomeDisplay2;
     public GameObject WelcomeDisplay3;
     public GameObject FaillureDisplay;
+    public GameObject SucessText;
 
     // for custom text within success ui display
     private int _NumAttempts;
-    private string _successMessage;
+    private string _SuccessMessage;
+    private bool _numAttemptsIncremented = false;
+    private float timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        _NumAttempts = 0;
+        _NumAttempts = 1;
+    }
+
+    private void Update()
+    {
+        if (_numAttemptsIncremented)
+        {
+            timer = 3.0f;
+            timer -= Time.deltaTime;
+            if (timer < 0.1)
+            {
+                _numAttemptsIncremented = false;
+            }
+        }
     }
 
     private void OnEnable()
@@ -38,20 +51,27 @@ public class SimulationSuccess : MonoBehaviour
 
     void SimComplete()
     {
-        GameObject newTextObj = new GameObject("successPathText");
-        newTextObj.transform.SetParent(SuccessBanner.transform);
-        Text myText = newTextObj.AddComponent<Text>();
-        myText.text = _successMessage;
+        /*
+        if (_NumAttempts > 1)
+        {
+            for (int i = _NumAttempts; i > 1; i--) 
+            {
+                _SuccessMessage += $"";
+            };
+        }
+        */
+        _SuccessMessage = $"You completed this simulation in {_NumAttempts} attempts";
+        SucessText.GetComponent<TMPro.TextMeshProUGUI>().text = _SuccessMessage;
         WelcomeDisplay1.SetActive(false);
         WelcomeDisplay2.SetActive(false);
         WelcomeDisplay3.SetActive(false);
         FaillureDisplay.SetActive(false);
-        _successMessage = $"You completed this simulation in {_NumAttempts} attempts";
         SuccessBanner.SetActive(true);
     }
 
     void incrementNumAttempts()
     {
         _NumAttempts++;
+        _numAttemptsIncremented = true;
     }
 }

@@ -36,9 +36,28 @@ public class SimFailCheck : MonoBehaviour
         _resetTimer = 0.0f;
     }
 
+
+    // Setting timer so that failcondition does not retrigger immediately
+    private void OnEnable()
+    {
+        ResetFromFailure.SimResetMeds += StartResetTimer;
+    }
+
+    private void OnDisable()
+    {
+        ResetFromFailure.SimResetMeds -= StartResetTimer;
+    }
+
+    void StartResetTimer()
+    {
+        _resetTimer -= Time.deltaTime;
+    }
+
+
     // Update is called once per frame
     void Update()
     {
+
         if (_failCheckCalledRecently)
         {
             if(_resetTimer > 1.0)
@@ -49,6 +68,7 @@ public class SimFailCheck : MonoBehaviour
         // First check that failcheck hasn't jsut been called
         if (!_failCheckCalledRecently) 
         {
+
             // first check, to ensure gloves have been applied before anything else
             if (!isGlovesApplied.IsGlovesApplied && isVaccineSocketInitiated.needleInVaccine)
             {
@@ -60,7 +80,7 @@ public class SimFailCheck : MonoBehaviour
                     NeedleRemovedFromVaccine = false;
                     NeedleInsertedInPatient = false;
                     _failCheckCalledRecently = true;
-                    _resetTimer = 10.0f;
+                    _resetTimer = 3.0f;
                 }
             } else
             {
@@ -78,7 +98,7 @@ public class SimFailCheck : MonoBehaviour
                     NeedleRemovedFromVaccine = false;
                     NeedleInsertedInPatient = false;
                     _failCheckCalledRecently = true;
-                    _resetTimer = 10.0f;
+                    _resetTimer = 3.0f;
                 }
             } else
             {

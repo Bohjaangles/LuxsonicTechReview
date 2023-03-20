@@ -28,14 +28,14 @@ public class GlovesApplied : MonoBehaviour
 
     private void OnEnable()
     {
-        ResetFromFailure.SimResetMeds += resetGloves;
+        ResetFromFailure.SimResetMeds += ResetGloves;
     }
 
     private void OnDisable()
     {
-        ResetFromFailure.SimResetMeds -= resetGloves;
+        ResetFromFailure.SimResetMeds -= ResetGloves;
     }
-    void resetGloves()
+    void ResetGloves()
     {
         IsGlovesApplied = false;
         handMaterial.color = Color.white;
