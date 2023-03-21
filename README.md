@@ -1,8 +1,7 @@
 # LuxsonicTechReview
-Project used as a tech review for my application to work with Luxsonic
+Project used as a tech review for my application to work with Luxsonic Technologies.
 
-
-Citations and external assets sources: 
+## Citations and external assets sources: 
  - hospital room 3d model = https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574
   - Credit = https://pubmed.ncbi.nlm.nih.gov/35137646/
   - License = CC Attribution-NonCommercial
@@ -27,10 +26,17 @@ Citations and external assets sources:
     - Credit = "CC0 - Tray" (https://skfb.ly/oxXX9) by plaggy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
     - CC Attribution
 
-
-
-
-  possible resources to use:
-
-  basic doctors room/office = https://www.artstation.com/marketplace/p/1YOJ/emergency-room
-    - $18.65 CAD
+## Packages and versions used
+ - JetBrains Rider Editor 3.0.18
+ - OenXR Plugin 1.6.0
+ - Test Framework 1.1.31
+ - TextMeshPro 3.0.6
+ - Timeline 1.6.4
+ - Unity UI 1.0.0
+ - Universal RP 12.1.10
+ - Version Control 2.0.1
+ - Visual Scripting 1.8.0
+ - Visual Studio Code Editor 1.2.5
+ - Visual Studio Editor 2.0.17
+ - XR Interation Toolkit 2.2.0
+ - XR Plugin Management 4.2.1
